@@ -77,7 +77,6 @@ class PatientRecordContract extends Contract {
      */
     async createPatientRecord(ctx,username,name,dob,gender,blood_type){
         let precord = PatientRecord.createInstance(username,name,dob,gender,blood_type);
-        await ctx.patientRecordList.addPRecord(precord);
         return precord.toBuffer();
     }
 
