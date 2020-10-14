@@ -157,20 +157,12 @@ class PatientRecordContract extends Contract {
      * @param {Context} ctx the transaction context
      * @param {String} gender gender to be queried
     */
+    // Graded Function
    /*async queryByGender(ctx, gender) {
-    //   TASK-4: Complete the query String JSON object to query using the genderIndex (META-INF folder)
-    // Construct the JSON couch DB selector queryString that uses genderIndex
-    // Pass the Query string built to queryWithQueryString
-    let queryString = {
-        // "selector": {
-        //     "gender": gender
-        // },
-        // "use_index": ["_design/genderIndexDoc", "genderIndex"]
-    }
-    // use the JSON string
-    return queryResults;
-
-}*/
+    //      TASK-4: Complete the query String JSON object to query using the genderIndex (META-INF folder)
+    //      Construct the JSON couch DB selector queryString that uses genderIndex
+    //      Pass the Query string built to queryWithQueryString
+ }*/
 
     /**
      * Query by Blood_Type
@@ -178,16 +170,12 @@ class PatientRecordContract extends Contract {
      * @param {Context} ctx the transaction context
      * @param {String} blood_type blood_type to queried
     */
+    // Graded Function
    /*async queryByBlood_Type(ctx, blood_type) {
-    //   TASK-5: Write a new index for bloodType and write a CouchDB selector query that uses it
-    //    to query by bloodType
-        //  Construct the JSON couch DB selector queryString that uses blood_typeIndex
-        // Pass the Query string built to queryWithQueryString
-    let queryString = {
-
-    }
-
-    return queryResults;
+    //      TASK-5: Write a new index for bloodType and write a CouchDB selector query that uses it
+    //      to query by bloodType
+    //      Construct the JSON couch DB selector queryString that uses blood_typeIndex
+    //      Pass the Query string built to queryWithQueryString
 
 }*/
 
@@ -197,15 +185,13 @@ class PatientRecordContract extends Contract {
      * @param {Context} ctx the transaction context
      * @param {String} blood_type blood_type to queried
     */
+    //Grade Function
   /* async queryByBlood_Type_Dual(ctx, blood_type1, blood_type2) {
-    //    TASK-6: Write a CouchDB selector query that queries using two blood types
-    //    and uses the index created for bloodType
-        // Construct the JSON couch DB selector queryString that uses two blood type indexe
-        // Pass the Query string built to queryWithQueryString
-    let queryString = {
+    //      TASK-6: Write a CouchDB selector query that queries using two blood types
+    //      and uses the index created for bloodType
+    //      Construct the JSON couch DB selector queryString that uses two blood type indexe
+    //      Pass the Query string built to queryWithQueryString
 
-    }
-    return queryResults;
 
 }*/
 
