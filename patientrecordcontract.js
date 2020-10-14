@@ -95,13 +95,13 @@ class PatientRecordContract extends Contract {
      * @param {String} name name
      * @param {String} last_checkup_date date string 
      */
-    async updateCheckupDate(ctx,username,name,last_checkup_date){
+    /*async updateCheckupDate(ctx,username,name,last_checkup_date){
         let precordKey = PatientRecord.makeKey([username,name]);
         //TASK-3: Use a method from patientRecordList to read a record by key
         //Use set_last_checkup_date from PatientRecord to update the last_checkup_date field
         //Use updatePRecord from patientRecordList to update the record on the ledger
        return precord.toBuffer();
-    }
+    }*/
 
 
 
@@ -157,7 +157,7 @@ class PatientRecordContract extends Contract {
      * @param {Context} ctx the transaction context
      * @param {String} gender gender to be queried
     */
-   async queryByGender(ctx, gender) {
+   /*async queryByGender(ctx, gender) {
     //   TASK-4: Complete the query String JSON object to query using the genderIndex (META-INF folder)
     // Construct the JSON couch DB selector queryString that uses genderIndex
     // Pass the Query string built to queryWithQueryString
@@ -170,7 +170,7 @@ class PatientRecordContract extends Contract {
     // use the JSON string
     return queryResults;
 
-}
+}*/
 
     /**
      * Query by Blood_Type
@@ -178,7 +178,7 @@ class PatientRecordContract extends Contract {
      * @param {Context} ctx the transaction context
      * @param {String} blood_type blood_type to queried
     */
-   async queryByBlood_Type(ctx, blood_type) {
+   /*async queryByBlood_Type(ctx, blood_type) {
     //   TASK-5: Write a new index for bloodType and write a CouchDB selector query that uses it
     //    to query by bloodType
         //  Construct the JSON couch DB selector queryString that uses blood_typeIndex
@@ -189,7 +189,7 @@ class PatientRecordContract extends Contract {
 
     return queryResults;
 
-}
+}*/
 
     /**
      * Query by Blood_Type Dual Query
@@ -197,7 +197,7 @@ class PatientRecordContract extends Contract {
      * @param {Context} ctx the transaction context
      * @param {String} blood_type blood_type to queried
     */
-   async queryByBlood_Type_Dual(ctx, blood_type1, blood_type2) {
+  /* async queryByBlood_Type_Dual(ctx, blood_type1, blood_type2) {
     //    TASK-6: Write a CouchDB selector query that queries using two blood types
     //    and uses the index created for bloodType
         // Construct the JSON couch DB selector queryString that uses two blood type indexe
@@ -207,7 +207,7 @@ class PatientRecordContract extends Contract {
     }
     return queryResults;
 
-}
+}*/
 
 }
 
