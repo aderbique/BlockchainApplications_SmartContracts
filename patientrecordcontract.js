@@ -79,6 +79,7 @@ class PatientRecordContract extends Contract {
         let precord = PatientRecord.createInstance(username,name,dob,gender,blood_type);
         //TASK 0
         // Add patient record by calling the method in the PRecordList
+        throw new Error()
         return precord.toBuffer();
     }
 
